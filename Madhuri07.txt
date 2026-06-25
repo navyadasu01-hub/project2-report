@@ -1,0 +1,51 @@
+                                                
+                 PROJECT-2
+                REPORT ANALYSIS
+
+     "DESIGN AND IMPLEMENTATION OF A SECURE AWS VPC USING PUBLIC AND PRIVATE SUBNET"
+
+
+INTRODUCTION:
+         This project demonstrate the implementation of a secure and scalable client-server architecture using Amazon Web Services. The objective was to build a cloud environment that hosts an application on EC2 instance, configures networking through a virtual private cloud VPC, manages traffic using security groups and load balancers, and enables secure file transfer and remote access.
+ 
+PROJECT OBJECTIVES:
+     .Create a custom AWS VPC with public and private networking components
+     .Launch and configure EC2 instance
+     .Implement Auto scaling for high availability
+     .Configure security groups and network ACLs for network security
+     .Connect to Linux instances using MOBAXTERM
+     .Transfer files securely between local and remote system
+     .Configure an application load balancer to distribute traffic
+     .Test and validate the complete infrastructure
+
+IMPLEMENTATION STEPS:
+     1.VPC configuration
+       A Virtual Private Cloud was created to provided an isolated networking environment public and private subnet were        configured along with route tables and an internet gateway enable controlled internet access.
+    2.Security groups
+        Security groups were configured to allow only required inbound and outbound traffic such as SSH and web traffic ensuring secure communication between resources.
+    3.Auto scaling group
+        An auto scaling group was created to automatically launch or terminate EC2 instance based on demand improving availability and fault tolerance.
+    4.EC2 instance deployment
+        Amazon EC2 instance were launched within the configured VPC instances were prepared to host the application and tested for connectivity.
+    5.Remote access with MOBAXTERM
+        MOBAXTERM was used to establish SSH connections to the EC2 instance using the appropriate key pair. Linux commands were executed for server administration and application management.
+    6.File transfer
+         Project files were securely transferred from the local system to the EC2 instances using SFTP/SCP functionality available in MOBAXTERM.
+     7.Application load balancer
+         An application load balancer(ALB) was configured  with a target group containing the EC2 instances. Listener rules were added to distribute incoming requests across healthy targets.
+     8.Testing and Validation
+         The load balancer DNS name was accessed through a web browser to verify successful request routing. Connectivity, security configurations, and application availability were tested to ensure the infrastructure functioned correctly.
+
+OUTCOME:
+   The project successfully demonstrated the deployment of a cloud based client server environment on AWS. It integrated networking, compute, security, scaling, load balancing, and remote management services into a working architecture capable of supporting reliable and scalable applications.
+ 
+CONCLUSION:
+       This implementation provided practical experience with core AWS services, including VPC, EC2, security groups, auto scaling, MOBAXTERM based administration file transfer, and application, load balancers. The project strengthened understanding of cloud infrastructure design, secure networking, and high availability deployment practices.
+
+
+ 
+ 
+
+
+
+ 
